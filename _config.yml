@@ -99,8 +99,8 @@ defaults:
       author_profile: true
   # _projects
   - scope:
-    path: ""
-    type: projects
+      path: "_projects"
+      type: projects
     values:
       layout: single
       author_profile:
