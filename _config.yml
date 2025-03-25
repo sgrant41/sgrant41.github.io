@@ -14,12 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Sam's Stuff
-email:
+email: samrgrant@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
+  In-progress portfolio of my work in engineering school.
 github_username: sgrant41
 minimal_mistakes_skin: dirt
 search: true
@@ -57,18 +54,23 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+
 author:
   name   : "Sam Grant"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Mechanical engineer and shape rotator passionate about prototyping, AM, education, and error messages."
+  bio    : "Mechanical engineer and shape rotator passionate about additive manufacturing, engineering education, and error messages."
   location: "Atlanta, GA"
   links:
     - label: "Resume"
       icon: "fas fa-fw fa-link"
-      url: "https://"
+      url: "/assets/Sam_Grant_Resume_03-25.pdf"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://twitter.com/"
+      url: "https://linkedin.com/in/samrgrant"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/sgrant41"
@@ -95,6 +97,14 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _projects
+  - scope:
+    path: ""
+    type: projects
+    values:
+      layout: single
+      author_profile:
+      share: false
 
 category_archive:
   type: liquid

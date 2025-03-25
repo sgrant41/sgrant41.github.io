@@ -1,11 +1,9 @@
 main:
    - title: "About"
      url: /about/
-   - title: "Posts"
-     url: /posts/
-   - title: "Categories"
-     url: /categories/
-   - title: "Tags"
-     url: /tags/
-   - title: "404"
-     url: /404/
+   - title: "Experience"
+     url: /experience/
+   - title: "Projects"
+     url: /_projects/
+   - title: "Resume"
+     url: /assets/Sam_Grant_Resume_03-25.pdf
