@@ -4,6 +4,6 @@ main:
    - title: "Experience"
      url: /experience/
    - title: "Projects"
-     url: /_projects/
+     url: /projects/
    - title: "Resume"
      url: /assets/Sam_Grant_Resume_03-25.pdf

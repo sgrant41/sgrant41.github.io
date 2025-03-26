@@ -21,6 +21,8 @@ github_username: sgrant41
 minimal_mistakes_skin: dirt
 search: true
 
+url: https://sgrant41.github.io
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
@@ -51,13 +53,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jekyll-remote-theme
   - jemoji
   - jekyll-include-cache
-
-collections:
-  projects:
-    output: true
-    permalink: /:collection/:path/
 
 author:
   name   : "Sam Grant"
@@ -78,7 +76,27 @@ author:
       icon: "fa-solid fa-kiwi-bird"
       url: "https://inventionstudio.gatech.edu"
 
+footer:
+  links:
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+    sort_by: order
+  
 defaults:
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: true
+      share: false
+      related: true
   # _posts
   - scope:
       path: ""
@@ -97,14 +115,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _projects
-  - scope:
-      path: "_projects"
-      type: projects
-    values:
-      layout: single
-      author_profile:
-      share: false
 
 category_archive:
   type: liquid
