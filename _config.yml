@@ -59,7 +59,7 @@ plugins:
 
 author:
   name   : "Sam Grant"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/headshot.jpg"
   bio    : "Mechanical engineer and shape rotator passionate about additive manufacturing, engineering education, and error messages."
   location: "Atlanta, GA"
   links:
